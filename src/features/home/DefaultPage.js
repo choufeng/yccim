@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import reactLogo from '../../images/react-logo.svg';
 import rekitLogo from '../../images/rekit-logo.svg';
 import * as actions from './redux/actions';
+import Button from '@material-ui/core/Button'
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -19,9 +20,10 @@ export class DefaultPage extends Component {
         <header className="app-header">
           <img src={reactLogo} className="app-logo" alt="logo" />
           <img src={rekitLogo} className="rekit-logo" alt="logo" />
-          <h1 className="app-title">Welcome to React</h1>
+          <h1 className="app-title">Welcome to My React</h1>
         </header>
         <div className="app-intro">
+          <Button variant="contained" color="primary"> 按钮</Button>
           <h3>To get started:</h3>
           <ul>
             <li>
